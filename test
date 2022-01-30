@@ -1,2 +1,2 @@
-git config --global user.email "jmok2@gmu.edu"
-git config --global user.name"ideal-jiwon"
+git config -- user.email "jmok2@gmu.edu"
+git config --user.name"ideal-jiwon"
