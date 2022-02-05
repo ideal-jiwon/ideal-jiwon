@@ -1,0 +1,35 @@
+---
+title: "WK2 - In-Class Exercises"
+author: "JI Won Mok - George Mason University, School of Business"
+output:
+  pdf_document: 
+    latex_engine: xelatex
+---
+
+
+```{r}
+# Writing Functions
+# Write a function to convert a vector of values with temperature in Celsius to Fahrenheit?
+
+temp_celsius <- function(x) 
+  {temp <- (x*1.8+32)
+    return(temp)
+}
+
+temp_vector <- c(18, 24, 21, 37, 51, 34, 41)
+temp_celsius(temp_vector)
+
+```
+
+
+```{r}
+# Filter the flights which flies more than 1500 miles from the flights dataset and arrange them in descending order based on the carrier. Select the columns - carrier, distance and tailnum. Use the pipe operator.
+
+library(nycflights13)
+library(tidyverse)
+nycflights13 %>%
+  filter(distance > 1500)%>%
+  arrange(desc(carrier)) %>%
+  select(carrier,distance,tailnum)
+
+```
