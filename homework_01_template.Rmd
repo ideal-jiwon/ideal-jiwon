@@ -1,0 +1,139 @@
+---
+title: "Homework Assignment #1"
+---
+
+
+**Your Name**:
+**Your G Number**:
+
+
+In this homework assignment we will be focusing on data analysis and visualization with the `tidyverse` 
+
+
+# Load Packages and Data
+
+The `R` code chunk below will load the `tidyverse` packages as well as an `auto_claims` data set.
+
+
+
+```{r}
+library(tidyverse)
+
+auto_claims <- read_rds('C:/RDataFiles/auto_claims.rds')
+```
+
+
+
+The `auto_claims` data contains information on auto accident claims processed by an insurance company in the western part of the United States.
+
+Each row represents a claim made by a customer and includes customer demographics, their policy characteristics, monthly premium, vehicle information, claim amount, and [customer lifetime value](https://en.wikipedia.org/wiki/Customer_lifetime_value)
+
+
+```{r}
+auto_claims
+```
+
+
+
+# Problem 1
+
+Write one expression using dplyr functions and the %>% operator to create the summary table below, and arrange it based on the customer state.
+
+This table contains the number of claims, maximum claim amount (total_claim_amount variable), and minimum customer lifetime value by customer_state and months_since_last_claim binned into 12 month categories.
+
+**Hint**: You will need to create the `month_category` variable using `cut_width()` before you calculate the summaries by groups.
+
+
+```{r}
+
+
+
+
+
+
+```
+
+
+
+# Problem 2
+
+Write one expression using dplyr functions and the %>% operator to create the summary table below.
+
+This table contains the average, median, and maximum values of total_claim_amount by vehicle_class.
+
+
+```{r}
+
+
+
+  
+```
+
+
+
+
+# Problem 3
+
+Use ggplot to create the data visualization below. Please use alpha = 0.25 and color = '#006633' within your geom function to match the points below.
+
+
+```{r}
+
+
+
+
+
+
+
+```
+
+
+
+
+# Problem 4
+
+Use ggplot to create the data visualization below.Width value is 0.07 and the aplha value is 0.1
+
+
+```{r}
+
+
+
+
+
+
+```
+
+
+
+
+# Problem 5
+
+Use `ggplot` to create the data visualization below. The number of bins in the histogram should be set to 15.
+
+
+```{r}
+
+
+
+
+
+```
+
+
+
+
+# Problem 6
+
+Use `ggplot` to create the data visualization below.
+
+
+```{r}
+
+
+
+```
+
+
+
+--- End of Assignment ---
