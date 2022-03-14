@@ -3,8 +3,8 @@ title: "Homework Assignment #1"
 ---
 
 
-**Your Name**:
-**Your G Number**:
+**Your Name**:Jiwon MOk
+**Your G Number**: G01096224
 
 
 In this homework assignment we will be focusing on data analysis and visualization with the `tidyverse` 
@@ -18,8 +18,7 @@ The `R` code chunk below will load the `tidyverse` packages as well as an `auto_
 
 ```{r}
 library(tidyverse)
-
-auto_claims <- read_rds('C:/RDataFiles/auto_claims.rds')
+auto_claims <- read_rds("~/https:/github.com/mason-sp22-cds101/ideal-jiwon/auto_claims.rds")
 ```
 
 
@@ -33,8 +32,6 @@ Each row represents a claim made by a customer and includes customer demographic
 auto_claims
 ```
 
-
-
 # Problem 1
 
 Write one expression using dplyr functions and the %>% operator to create the summary table below, and arrange it based on the customer state.
@@ -42,17 +39,13 @@ Write one expression using dplyr functions and the %>% operator to create the su
 This table contains the number of claims, maximum claim amount (total_claim_amount variable), and minimum customer lifetime value by customer_state and months_since_last_claim binned into 12 month categories.
 
 **Hint**: You will need to create the `month_category` variable using `cut_width()` before you calculate the summaries by groups.
-
-
 ```{r}
-
-
-
-
-
-
+library(dplyr)
+auto_claims %>%
+ mutate(month_category=cut_width(monthly_premium, width =12, boundary=0))%>%
+  group_by(customer_state) %>%
+  summarize(n_claims = total_claim_amount, avg_claim_amunt = mean(total_claim_amount), min_customer_lifetime_val = min(customer_lifetime_value), month_category)
 ```
-
 
 
 # Problem 2
@@ -63,10 +56,9 @@ This table contains the average, median, and maximum values of total_claim_amoun
 
 
 ```{r}
-
-
-
-  
+auto_claims %>%
+  group_by(vehicle_class)%>%
+  summarise(min_amount = min(total_claim_amount), median_amount = median(total_claim_amount), max_amount = max(total_claim_amount), avg_amount = mean(total_claim_amount))
 ```
 
 
@@ -78,16 +70,12 @@ Use ggplot to create the data visualization below. Please use alpha = 0.25 and c
 
 
 ```{r}
-
-
-
-
-
-
+ggplot(auto_claims, aes(x= customer_lifetime_value, y= total_claim_amount))+
+  geom_point(alpha=0.25, color = '#006633')+
+  facet_wrap(~ vehicle_size + sales_channel)+
+  labs(title = "Total Claim Amount vs Customer Lifetime Value by sales channel and Vehicle size")
 
 ```
-
-
 
 
 # Problem 4
@@ -96,15 +84,10 @@ Use ggplot to create the data visualization below.Width value is 0.07 and the ap
 
 
 ```{r}
-
-
-
-
-
-
+ggplot(auto_claims, aes(x=sales_channel, y=total_claim_amount, fill = sales_channel))+
+  geom_violin(alpha = 0.1, width=0.07, trim=FALSE)+geom_jitter(alpha=0.1, position = position_jitter(width=0.1))
+  labs(title = "violin plot of total claim amount by sales channel")
 ```
-
-
 
 
 # Problem 5
@@ -113,11 +96,10 @@ Use `ggplot` to create the data visualization below. The number of bins in the h
 
 
 ```{r}
-
-
-
-
-
+ggplot(auto_claims, aes(x=total_claim_amount, fill=customer_state))+
+  geom_histogram(bins=15, color = 'white')+
+  facet_wrap(~customer_state)+
+  labs( y= 'Proportion of Customers', x = 'Total Claim Amount')
 ```
 
 
@@ -129,8 +111,10 @@ Use `ggplot` to create the data visualization below.
 
 
 ```{r}
-
-
+ggplot(auto_claims, aes(y= highest_education, fill = vehicle_class))+
+  geom_bar(position="fill")+
+  labs(title = 'Vehicle Size Ownership by Highest Education')+
+  labs(x = 'Proportion of Customers')
 
 ```
 
