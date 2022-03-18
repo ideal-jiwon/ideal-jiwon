@@ -2,7 +2,7 @@
 - 👀 I’m interested in exploring new places 
 - 🌱 I’m currently learning Data Science
 - 💞️ I’m looking to collaborate on projects on Kaggle
-- 📫 How to reach me via 
+- 📫 How to reach me via jmok2@gmu.edu
 
 <!---
 ideal-jiwon/ideal-jiwon is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
