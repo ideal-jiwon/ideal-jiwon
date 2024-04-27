@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @ideal-jiwon
-- 👀 I’m interested in exploring new places 
-- 🌱 I’m currently learning Data Science
-- 💞️ I’m looking to collaborate on projects on Kaggle
+- 👀 I live in Long Island, NY
+- 🌱 I’m currently pursuing the career as the data engineer and further ML engineer
 - 📫 How to reach me via jmok2@gmu.edu
 
 <!---
