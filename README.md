@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @ideal-jiwon
-- 👀 I live in Long Island, NY
-- 🌱 I’m currently pursuing the career as the data engineer and further ML engineer
-- 📫 How to reach me via annest94@gmail.com or 5713539600
+- 👋 Hi, I’m Jiwon Stellar Mok (@ideal-jiwon)
+- 👀 I live in Stamford, CT
+- 🌱 I'm pursuing my career as system designer and my final goal is to ship startups and become billionaire
+- 📫 How to reach me via mok.ji@northeastern.edu or 5713539600
 
 <!---
 ideal-jiwon/ideal-jiwon is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
