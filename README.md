@@ -14,10 +14,19 @@ I am always looking for new projects that allow me to grow and learn new skills.
 ---
 ## GitHub Stats:
 
-<p align="space-between">
-  <img src="https://github-readme-stats.vercel.app/api?username=ideal-jiwon&show_icons=true&theme=calm&bg_color=F5F5F5" width="420" height="200" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ideal-jiwon&layout=compact&theme=calm&bg_color=F5F5F5" width="420" height="200" />
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=ideal-jiwon&show_icons=true&theme=calm&bg_color=F5F5F5" width="320" />
+    </td>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ideal-jiwon&layout=compact&theme=calm&bg_color=F5F5F5" width="320" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/ideal-jiwon/productive-box/blob/output/graph/production.svg" width="320" />
+    </td>
+  </tr>
+</table>
 
 ---
 
