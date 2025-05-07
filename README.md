@@ -2,7 +2,7 @@
 
 Hi, there! 
 
-If you reached my profile, you found a person who is full of exciting business ideas and can code to bring those ideas to life. I am a versatile **full-stack developer** with a **Software Engineering Systems degree** equipped with 3 years of operation and market experiences in California and NYC. I love building applications and I am not afraid of tackling any challenge and learning new skillsets along the way. I am committed to advancing toward an AI/ML engineering career, with a particular interest in natural language processing and large language models. I am a self-taught for data science and big data mangement. 
+If you reached my profile, you found a person who is full of exciting business ideas and can code to bring those ideas to life. I am a versatile **full-stack developer focusing on ML/AI model deployment** with a **Software Engineering Systems degree** equipped with 3 years of operation and market experiences in California and NYC. I love building applications and I am not afraid of tackling any challenge and learning new skillsets along the way. I am committed to advancing toward an AI/ML engineering career, with a particular interest in natural language processing and large language models. I am a self-taught for data science and big data mangement. 
 Check out my study notes! 📫 https://www.notion.so/081e20ab5a464997b21e16b8d3e4f4e3?v=836302a1d1b749b29a6cfb7fd6186b5b&pvs=4
 
 I am always looking for new projects that allow me to grow and learn new skills. So, if you are looking for a candidate who is passionate about coding and bringing business ideas to life or interested in working together, please reach out to me at mok.ji@northeastern.edu!
